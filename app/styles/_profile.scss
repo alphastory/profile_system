@@ -1,0 +1,38 @@
+.profile {
+	overflow: auto;
+	clear: both;
+	border-bottom: 1px solid #ececec;
+	padding: 25px;
+	transition: background-color 0.3s;
+
+	&:hover {
+		cursor: pointer;
+		background-color: #ececec;
+	}
+
+	.left {
+		width: 20%;
+		float: left;
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	.right {
+		width: 78%;
+		float: right;
+		padding-top: 25px;
+		h2 {
+			font-family: $merriweather;
+			font-size: 22px;
+		}
+
+		p {
+			font-family: $opensans;
+			font-size: 14px;
+			margin-top: 10px;
+		}
+	}
+}

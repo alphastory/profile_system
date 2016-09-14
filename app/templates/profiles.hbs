@@ -1,0 +1,31 @@
+<div id="profiles">
+	{{#each model as |profile|}}
+
+		{{#link-to 'profile' profile}}
+			<div class="profile">
+				<div class="left">
+					<img src="{{profile.photo}}" />
+				</div>
+				<div class="right">
+					<h2>{{profile.name}}</h2>
+					<p>{{profile.occupation}}</p>
+				</div>
+			</div>
+		{{/link-to}}
+	{{else}}
+		<div class="profile">
+			<h2>No Profiles Founds. <a href="#" {{action 'showNewForm'}}>Add One?</a></h2>
+		</div>
+	{{/each}}
+</div>
+
+<div id="newProfile">
+	<input type="file" id="newPhoto" /><br />
+	{{input type="text" placeholder="Name" value=profileName}}<br />
+	{{input type="text" placeholder="Occupation" value=profileOccupation}}<br />
+	{{input type="text" placeholder="DOB (03/01/1987)" value=profileDOB}}<br />
+	<div class="btn" {{action 'addProfile'}}>Save Profile</div>
+</div>
+<div id="blur"></div>
+
+<div id="newProfileBtn" class="btn" {{action 'showNewForm'}}>Add New Profile</div>
