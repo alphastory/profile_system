@@ -5,11 +5,6 @@
 	padding: 25px;
 	transition: background-color 0.3s;
 
-	&:hover {
-		cursor: pointer;
-		background-color: #ececec;
-	}
-
 	.left {
 		width: 20%;
 		float: left;
@@ -23,7 +18,13 @@
 	.right {
 		width: 78%;
 		float: right;
-		padding-top: 25px;
+		.padded {
+			margin-top: 25px;
+		}
+
+		.actions {
+			margin-top: 35px;
+		}
 		h2 {
 			font-family: $merriweather;
 			font-size: 22px;
@@ -32,7 +33,55 @@
 		p {
 			font-family: $opensans;
 			font-size: 14px;
+			margin: 10px 0;
+		}
+
+		a {
+			color: #0088FF;
+			transition: color 0.3s;
+			text-decoration: none;
+			&:hover {
+				color: #295CA3;
+			}
+		}
+
+		input {
+			width: 100%;
+			max-width: 300px;
+			border: 1px solid #ececec;
+			padding: 10px;
+			font-family: $opensans;
+			font-size: 14px;
+		}
+
+		.btn {
+			width: 100%;
+			max-width: 300px;
+			padding: 10px;
+			background-color: #0088FF;
+			color: white;
+			text-align: center;
+			transition: background-color 0.3s;
+			cursor: pointer;
+			border: none;
 			margin-top: 10px;
+			&:hover {
+				background-color: #295CA3;
+			}
+		}
+	}
+}
+
+.return {
+	width: 100%;
+	text-align: right;
+	padding: 25px 0;
+	a {
+		color: #0088FF;
+		transition: color 0.3s;
+		text-decoration: none;
+		&:hover {
+			color: #295CA3;
 		}
 	}
 }
