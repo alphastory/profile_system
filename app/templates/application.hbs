@@ -1,0 +1,9 @@
+<h1>Profile Manager</h1>
+<hr />
+<div id="container">
+	{{outlet}}
+</div>
+
+{{#if session.isAuthenticated}}
+	<div class="signOut" {{action 'signOut'}}>Sign Out</div>
+{{/if}}

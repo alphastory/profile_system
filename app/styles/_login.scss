@@ -1,0 +1,29 @@
+form {
+
+	width: 300px;
+	margin: 0 auto;
+	padding-top: 100px;
+
+	.signInField input {
+		width: 300px;
+		padding: 10px 15px;
+		margin: 10px 0;
+	}
+
+	.btn {
+		width: 300px;
+		padding: 15px;
+		background-color: #0088FF;
+		border: 5px solid #0088FF;
+		color: #FFFFFF;
+		text-align: center;
+		cursor: pointer;
+		transition: all 0.3s;
+		margin-top: 10px;
+		&:hover {
+			background-color: #FFFFFF;
+			color: #0088FF;
+		}
+	}
+
+}
